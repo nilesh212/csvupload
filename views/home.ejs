@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="<%= assetPath('css/home_css.css')%>" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="upload-csv">
+      <h1>Upload CSV File</h1>
+      <form
+        action="/upload-csv"
+        method="post"
+        enctype="multipart/form-data"
+        class="form-csv"
+      >
+        <input type="file" name="csvFile" class="input-csv" />
+        <button type="submit" class="submit-csv">Submit</button>
+      </form>
+    </div>
+    <div class="list-csvs">
+      <%if(csvFiles){%>
+      <h1>List of CSV Files</h1>
+      <ol type="1">
+        <%for(let csvFile of csvFiles){%>
+        <li>
+          <a href="/show-csvData?filename=<%=csvFile.nameWithDate%>"
+            ><%= csvFile.name%></a
+          >
+        </li>
+        <%}%>
+      </ol>
+
+      <%}%>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

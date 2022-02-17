@@ -1,0 +1,64 @@
+body {
+  background-color: #eebfbb;
+  font-family: "rubik", sans-serif;
+  display: flex;
+  width: 100%;
+}
+
+.list-csvs {
+  width: 48%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-csv {
+  width: 48%;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-csv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-csv {
+  margin-bottom: 20px;
+  width: 20vw;
+  height: 2vw;
+  font-size: 1.2vw;
+}
+
+.input-csv::-webkit-file-upload-button {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(243, 96, 38);
+  width: 10vw;
+  height: 2vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+}
+
+.submit-csv {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: darkblue;
+  width: 10vw;
+  height: 2vw;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.submit-csv:hover {
+  box-shadow: 0px 0px 10px 2px rgb(43, 43, 173);
+}

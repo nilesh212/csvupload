@@ -1,0 +1,10 @@
+SrNo,Student ID,Student Name,Student College,Student Status,DSA Final Score,WebD Final Score,React Final Score,Interview Date,Interview Company,Interview Student Result
+1,1,Jason Hazeltine,Government College of engineering London,Not Placed,100%,100%,95%,2022-02-19,Google,On Hold
+2,2,Adam Abraham,Government College of engineering California,Placed,99%,95%,99%,2022-02-19,Google,Pass
+3,3,John Sima,Government College of engineering London,Placed,99%,99%,99%,2022-02-19,Google,Pass
+4,1,Jason Hazeltine,Government College of engineering London,Not Placed,100%,100%,95%,2022-02-08,Microsoft,Pass
+5,3,John Sima,Government College of engineering London,Placed,99%,99%,99%,2022-02-08,Microsoft,Fail
+6,2,Adam Abraham,Government College of engineering California,Placed,99%,95%,99%,2022-02-16,Meta,Pass
+7,1,Jason Hazeltine,Government College of engineering London,Not Placed,100%,100%,95%,2022-02-16,Googly,On Hold
+8,2,Adam Abraham,Government College of engineering California,Placed,99%,95%,99%,2022-02-16,Googly,Pass
+9,3,John Sima,Government College of engineering London,Placed,99%,99%,99%,2022-02-16,Googly,Pass

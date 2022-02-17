@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= title%></title>
+    <link rel="stylesheet" href="<%= assetPath('css/show_csvData_css.css')%>" />
+  </head>
+  <body>
+    <%if(csvFile){%>
+    <input
+      type="text"
+      name=""
+      class="search-box"
+      placeholder="Search row by <%= searchBy%>"
+    />
+    <button class="search-btn">Search</button>
+    <span style="display: none"><%= searchBy%></span>
+    <table border="solid" cellpadding="0" cellspacing="0">
+      <thead>
+        <tr>
+          <%for(let key in csvFile[0]){%>
+          <th title="<%= key%>"><%= key%></th>
+          <%}%>
+        </tr>
+      </thead>
+      <tbody>
+        <%for(let csvData of csvFile){%>
+        <tr class="<%= searchBy%>">
+          <%for(let key in csvData){%>
+          <td title="<%= csvData[key]%>" class="<%= csvData[key]%>">
+            <%= csvData[key]%>
+          </td>
+          <%}%>
+        </tr>
+        <%}%>
+      </tbody>
+    </table>
+    <%}%>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="<%= assetPath('js/show_csvData_js.js')%>"></script>
+  </body>
+</html>

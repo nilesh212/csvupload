@@ -1,0 +1,68 @@
+body {
+  background-color: rgb(248, 211, 196);
+  font-family: "rubik", sans-serif;
+  text-align: center;
+}
+
+.search-box {
+  width: 20vw;
+  height: 2vw;
+  border-radius: 5px;
+  border: 1px solid lightskyblue;
+  outline-color: mediumblue;
+  font-size: 1.2vw;
+  margin: 20px 0px;
+}
+
+.search-btn {
+  border: none;
+  width: 10vw;
+  height: 2.1vw;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0px;
+  font-size: 1.2vw;
+  color: white;
+  background-color: tomato;
+  transition: all 0.3s;
+}
+
+.search-btn:hover {
+  box-shadow: 0px 0px 10px 2px tomato;
+}
+
+table {
+  border: none;
+  white-space: nowrap;
+  /* border-collapse: collapse; */
+  table-layout: fixed;
+  width: 20vw;
+  margin: auto;
+}
+
+td,
+th {
+  border: none;
+  width: 20vw;
+  height: 2vw;
+}
+
+tr:nth-child(2n) {
+  background-color: rgb(231, 231, 231);
+}
+tr:nth-child(2n + 1) {
+  background-color: white;
+}
+
+tr {
+  transition: all 0.5s;
+}
+tr:hover {
+  background-color: rgb(138, 218, 101);
+}
+
+thead > tr:first-child {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  height: 2vw;
+}
