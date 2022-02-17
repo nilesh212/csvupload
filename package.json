@@ -28,6 +28,9 @@
     "rotating-file-stream": "^3.0.2"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
-  }
+    "gulp": "^4.0.2",
+    "nodemon":"^2.0.15",
+  },
+  "engines":{
+    "node":"^14.18.1",
 }
